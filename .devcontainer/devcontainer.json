@@ -17,5 +17,13 @@
     "mounts": [
         "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind"
     ],
+    // "runArgs": [
+    //     "--device=/dev/video0",
+    //     "--group-add=video",
+    //     "--env",
+    //     "QT_X11_NO_MITSHM=1",
+    //     "--env",
+    //     "DISPLAY=${localEnv:DISPLAY}"
+    // ],
     "postCreateCommand": "xhost +local:docker || true"
 }
