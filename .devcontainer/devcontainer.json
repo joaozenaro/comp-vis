@@ -4,6 +4,9 @@
     },
     "customizations": {
         "vscode": {
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash"
+            },
             "extensions": [
                 "ms-vscode.cpptools",
                 "ms-vscode.cmake-tools",
@@ -25,5 +28,6 @@
     //     "--env",
     //     "DISPLAY=${localEnv:DISPLAY}"
     // ],
-    "postCreateCommand": "xhost +local:docker || true"
+    "postCreateCommand": "xhost +local:docker || true",
+    "remoteUser": "vscode"
 }
