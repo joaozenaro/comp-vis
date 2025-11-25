@@ -1,11 +1,13 @@
-TARGET = opencv_test
+TARGET = main
 BUILD_DIR = build
+
+default: clean build run
 
 build:
 	mkdir -p $(BUILD_DIR)
 	cd $(BUILD_DIR) && cmake .. && $(MAKE)
 
-run: build
+run:
 	./$(BUILD_DIR)/$(TARGET)
 
 clean:
